@@ -1,0 +1,61 @@
+body{
+	margin-top: 20px;
+	background-color: #d5d9de;
+}
+
+p{
+	color: #656565;
+}
+
+.container{
+	background-color: white;
+	padding: 20px;
+	box-shadow: 0 0 5px #9d9d9d;
+}
+
+.btns {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.btns button.btn-block {
+	height: 100%;
+	width: 30%;
+	margin: 0;
+}
+
+.btn-start {
+	background-color: lightgreen;
+	border-color: lightgreen;
+}
+
+.btn-interact {
+	background-color: lightseagreen;
+	border-color: lightseagreen;
+}
+
+.btn-complete {
+	background-color: lightcoral;
+	border-color: lightcoral;
+}
+.row {
+	margin: 2% 0 0 0;
+}
+
+.result {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.result p {
+	background-color: lightskyblue;
+	padding: 0.5% 2%;
+	color: #fff;
+	border-radius: 20px;
+	font-weight: 700;
+	font-size: 20px;
+}

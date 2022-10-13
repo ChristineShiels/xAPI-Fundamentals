@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>xAPI in Action Example</title>
+	<!-- Mobile Specific Metas -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  	<!-- Bootstrap CSS -->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+  	<!-- Custom CSS -->
+  	<link rel="stylesheet" type="text/css" href="css/interaction.css">
+
+</head>
+
+<body onload="pageLoaded()">
+
+	<div class="container">
+		
+		<h5>Send Simple Statement on Button Click</h5>
+		<p>In the following example you will learn how to send a simple xAPI statement.</p>
+
+		<form action="">
+			<div class="form-group">
+				<label for="nameEntered">Name:</label>
+				<input type="text" class="form-control form-control-lg" id="nameEntered" placeholder="Type your name here">
+			</div>
+			<div class="form-group">
+				<label for="userEmail">Email:</label>
+				<input type="email" class="form-control form-control-lg" id="userEmail" placeholder="Enter your email" aria-describedby="emailHelp">
+			</div>
+		</form>
+
+		<!-- Button to send statement -->
+		<div class="btns">
+			<button type="button" class="btn btn-info btn-lg btn-block btn-start" onclick="sendStarted()" >Start</button>
+			<button type="button" class="btn btn-info btn-lg btn-block btn-interact" onclick="sendInteracted()" >Interact</button>
+			<button type="button" class="btn btn-info btn-lg btn-block btn-complete" onclick="sendCompleted()" >Complete</button>
+
+		</div>
+		<div class="row">
+			<button type="button" onclick="generateData()" class=" btn btn-info btn-lg btn-block btn-pull" >Pull Data</button>
+		</div>
+
+		<div class="row result">
+			<h5>Interaction Count:</h5>
+			<p class="intCount" id="interactionCount">0</p>
+		</div>
+
+	</div>
+
+	<!-- Bootstrap -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="js/interaction.js"></script>
+
+	<!-- xAPI -->
+	<script src="js/cryptojs_v3.1.2.js"></script>
+	<script src="js/xapiwrapper.js"></script>
+
+</body>
+
+</html>
