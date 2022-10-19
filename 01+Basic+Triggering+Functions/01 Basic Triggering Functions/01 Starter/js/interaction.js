@@ -116,12 +116,12 @@ generateData = () => {
 }
 
 getInteractedStatements = () => {
-    const email = document.getElementById("userEmail").value;
-    const myParams = ADL.XAPIWrapper.searchParams();
-    myParams['since'] = timeSince.toISOString();
-    myParams['verb'] = "http://adlnet.gov/expapi/verbs/interacted";
-    myParams['activity'] = "http://punklearning.com/xapi/simple_button";
-    myParams['agent'] = "{'mbox' : 'mailto:" + email + "'}";
+	const email = document.getElementById("userEmail").value;
+	const myParams = ADL.XAPIWrapper.searchParams();
+	myParams["since"] = timeSince.toISOString();
+	myParams["verb"] = "http://adlnet.gov/expapi/verbs/interacted";
+	myParams["activity"] = "http://punklearning.com/xapi/simple_button";
+	myParams["agent"] = "{'mbox' : 'mailto:" + email + "'}";
 
-    return myParams;
-}
+	return myParams;
+};
